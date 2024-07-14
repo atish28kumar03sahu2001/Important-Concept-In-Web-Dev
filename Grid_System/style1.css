@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(203, 203, 255);   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 1rem;
+    padding: 2rem;
+    /*If you want stretch remove height and width of .item*/
+    justify-items: center;/*start, end, center, stretch */
+    align-items: center;/*start, end, center, stretch */
+    /*place-items: center; *//* Combination of Justify-items and Align-items*/
+}
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 196);
+    border: 1px solid rgb(255, 255, 255);
+    /* justify-self: end; */
+    /* justify-self: start; */
+    /* justify-self: center; */
+    /*If you want stretch remove height and width*/
+    /* justify-self: stretch;  */
+    /* align-self: start;*/ /*start, end, center, stretch */
+    /*place-self: center; *//* Combination of Justify-self and Align-self*/
+}
