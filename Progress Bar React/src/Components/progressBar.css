@@ -1,0 +1,25 @@
+.progress-div {
+    border-radius: 50px;
+    height: 30px;
+    width: 500px;
+    background-color: rgb(199, 199, 199);
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.progress-div span {
+    z-index: 1;
+}
+
+.CLR {
+    height: 100%;
+    background-color: rgb(133, 248, 133);
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
