@@ -1,0 +1,55 @@
+.Stepper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.Step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.Stepnumber {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    z-index: 2;
+}
+
+.Stepname {
+    font-size: 15px;
+    text-align: center;
+}
+
+.active .Stepnumber {
+    background-color: blue;
+    color: #fff;
+}
+
+.Complete .Stepnumber {
+    background-color: green;
+    color: #fff;
+}
+
+.progress {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    height: 4px;
+    background-color: #ccc;
+}
+
+.prg {
+    height: 100%;
+    background-color: #28a745;
+    transition: 0.2s ease;
+}
